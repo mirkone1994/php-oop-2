@@ -11,7 +11,7 @@ class Vip extends User {
     }
 
     protected function setDiscount(){
-        if ($this->vip = 1){
+        if ($this->vip == 1){
             $this->discount = 30;
         }
             else {
