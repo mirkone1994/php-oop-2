@@ -5,6 +5,7 @@ class User {
     protected $surname;
     protected $address;
     protected $card;
+    protected $discount;
     
     public function __construct($_name, $_surname, $_address, $_card){
         $this->name = $_name;
@@ -19,5 +20,14 @@ class User {
 
     public function getAddress(){
         return $this->address; 
+    }
+
+    protected function setDiscount(){
+        $this->discount = 0;
+    }
+
+    public function getDiscount(){
+        $this->setDiscount();
+        return $this->discount;
     }
 }
